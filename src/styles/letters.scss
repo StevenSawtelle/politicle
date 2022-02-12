@@ -1,0 +1,36 @@
+
+.result-text {
+    white-space: nowrap;
+
+    .wordle-letter {
+        display: inline-block;
+        width: 62px;
+        height: 62px;
+        color: #fff;
+        margin-right: 6px;
+        margin-top: 6px;
+    
+        .tile {
+            width: 62px;
+            height: 62px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .incorrect {
+            background-color: #3a3a3c;
+        }
+
+        .correct { 
+            background-color: #538d4e;
+        }
+
+        .misplaced {
+            background-color: #c9b458;;
+        }
+    }
+}

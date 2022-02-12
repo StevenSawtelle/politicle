@@ -18,3 +18,8 @@ img{
   height:auto;
   width:auto;
 }
+
+.ui.fluid.dropdown {
+  width: 30%;
+  min-width: 200px;
+}

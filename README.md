@@ -1,3 +1,12 @@
+# Politicle
+
+Wordle-inspired game where you guess the location of a US poltician, made for my girlfriend (who works for a senator and wants to learn more) for Valentine's day 2022. 
+
+To do for MVP:
+- multiple guesses, track guesses
+- Guess validation, hints (north/east/south/west)
+- Link to images, not include them in repo
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
