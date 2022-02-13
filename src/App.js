@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import './App.css';
 import { getRandomPolitician } from "./helpers/politicianMapping";
-import { states, statesMapping } from "./helpers/states";
+import { statesMapping } from "./helpers/states";
 import ImageContainer from './ImageContainer';
 import ResultText from "./ResultText";
 import StateSelection from './StateSelection';
@@ -37,6 +37,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className={'politicle'}>Politicle</h1>
         <ImageContainer politician={politician} />
         <p>
           {mainText}
@@ -46,9 +47,11 @@ const App = () => {
           <button onClick={playAgain}>
               Start over
           </button>}
-        {guesses.map((guess, i) => {
-          return <ResultText key={i} guess={guess} politician={politician} />
-        })}
+        <div className={'results'}>
+          {guesses.map((guess, i) => {
+            return <ResultText key={i} guess={guess} politician={politician} />
+          })}
+        </div>
       </header>
     </div>
   );

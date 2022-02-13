@@ -27,7 +27,7 @@ const politicians = [
     },
     {
         name: "Ben Sasse",
-        state: "Nebrasks",
+        state: "Nebraska",
         url: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Ben_Sasse_Official_photo_%28cropped%29.jpg"
     },
     {
@@ -471,12 +471,12 @@ const politicians = [
         url: "https://upload.wikimedia.org/wikipedia/commons/7/76/Tim_Kaine_116th_official_portrait_%28cropped%29.jpg"
     },
     {
-        name: "Tim Scott",
-        state: "",
-        url: ""
+        name: "Tina Smith",
+        state: "Minnesota",
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Tina_Smith%2C_official_portrait%2C_116th_congress_%28cropped%29.jpg"
     },
     {
-        name: "Tina Smith",
+        name: "Tim Scott",
         state: "South Carolina",
         url: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Tim_Scott%2C_official_portrait%2C_113th_Congress_%28cropped_2%29.jpg"
     },
@@ -502,6 +502,4 @@ const politicians = [
     }
 ];
 
-export const getRandomPolitician = () => {
-    return politicians[Math.floor(Math.random()*politicians.length)];
-}
+export const getRandomPolitician = () => politicians[Math.floor(Math.random()*politicians.length)];

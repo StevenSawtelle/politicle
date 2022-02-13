@@ -1,40 +1,39 @@
+.results{
+    display: table;
+    .result-text {
+        white-space: nowrap;
+        display: flex;
 
-.result-text {
-    white-space: nowrap;
+        .wordle-letter {
+            display: inline-block;
+            height: min(64px, 6vw);
+            width: min(64px, 6vw);
+            color: #fff;
+            margin-right: 6px;
+            margin-top: 6px;
+        
+            .tile {
+                height: min(64px, 6vw);
+                width: min(64px, 6vw);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+            }
 
-    .wordle-letter {
-        display: inline-block;
-        max-width: 64px;
-        max-height: 64px;
-        min-width: 32px;
-        min-height: 32px;
-        color: #fff;
-        margin-right: 6px;
-        margin-top: 6px;
-    
-        .tile {
-            max-width: 64px;
-            max-height: 64px;
-            min-width: 32px;
-            min-height: 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            font-weight: bold;
-            font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-        }
+            .incorrect {
+                background-color: #3a3a3c;
+            }
 
-        .incorrect {
-            background-color: #3a3a3c;
-        }
+            .correct { 
+                background-color: #538d4e;
+            }
 
-        .correct { 
-            background-color: #538d4e;
-        }
-
-        .misplaced {
-            background-color: #c9b458;;
+            .misplaced {
+                background-color: #c9b458;;
+            }
         }
     }
 }

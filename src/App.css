@@ -24,6 +24,13 @@
   color: white;
 }
 
+.politicle {
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 37px;
+}
+
 .App-link {
   color: #61dafb;
 }

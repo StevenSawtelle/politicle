@@ -22,23 +22,17 @@ const getHitList = (guess, goal) => {
             }
         }
     }
-    // console.log(hitList)
-    // console.log(usedLetters)
     //then pass for misplaced letters
     const goalCharArray = goal.split('');
-    // console.log(goalCharArray)
     for(let i=0; i < guess.length; i+=1){
         if(hitList[i]==='correct'){
             continue;
         }
         let cur = guess[i];
         if(goalCharArray.includes(cur)){
-            // console.log(`found for ${cur}`)
             //possible misplace, but need to see if letter already used
             const countOfCurInGoal = goal.split(cur).length - 1;
             const alreadyUsedCurCount = usedLetters[cur] || 0;
-            // console.log(countOfCurInGoal)
-            // console.log(alreadyUsedCurCount)
             if(countOfCurInGoal > alreadyUsedCurCount){
                 //misplaced
                 hitList[i] = 'misplaced';
@@ -51,8 +45,6 @@ const getHitList = (guess, goal) => {
             }
         }
     }
-    // console.log(hitList)
-    // console.log(usedLetters)
     return hitList;
 }
 
