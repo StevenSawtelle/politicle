@@ -4,15 +4,19 @@
 
     .wordle-letter {
         display: inline-block;
-        width: 62px;
-        height: 62px;
+        max-width: 64px;
+        max-height: 64px;
+        min-width: 32px;
+        min-height: 32px;
         color: #fff;
         margin-right: 6px;
         margin-top: 6px;
     
         .tile {
-            width: 62px;
-            height: 62px;
+            max-width: 64px;
+            max-height: 64px;
+            min-width: 32px;
+            min-height: 32px;
             display: flex;
             justify-content: center;
             align-items: center;
