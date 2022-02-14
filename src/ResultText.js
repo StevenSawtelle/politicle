@@ -73,19 +73,26 @@ const WordleLetter = ({ status, letter }) => {
     </div>;
 }
 
-const ResultText = ({guess, politician }) => {
+export const EmptyResults = () => {
+    return <div className='result-text'>
+        {[0,1,2,3].map((i) => {
+            return <WordleLetter key={i}
+                status={'incorrect'}
+            />
+        })}
+    </div>
+}
+
+export const ResultText = ({guess, politician }) => {
     const noSpaceGuess = guess.split(' ').join('');
     const noSpacePolticianState = politician.state.toUpperCase().split(' ').join('');
     const hitList = getHitList(noSpaceGuess,noSpacePolticianState);//eg ['correct', 'incorrect', 'incorrect', 'misplaced']
     return <div className='result-text'>
         {noSpaceGuess.split('').map((letter, i) => {
             return <WordleLetter key={i}
-                // status={getStatus(noSpaceGuess, noSpacePolticianState, i)}
                 status={hitList[i]}
                 letter={letter}
             />
         })}
     </div>
 }
-
-export default ResultText;

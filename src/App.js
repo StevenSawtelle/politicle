@@ -4,7 +4,7 @@ import './App.css';
 import { getRandomPolitician } from "./helpers/politicianMapping";
 import { statesMapping } from "./helpers/states";
 import ImageContainer from './ImageContainer';
-import ResultText from "./ResultText";
+import { EmptyResults, ResultText } from "./ResultText";
 import StateSelection from './StateSelection';
 
 let politician = getRandomPolitician();
@@ -50,6 +50,9 @@ const App = () => {
         <div className={'results'}>
           {guesses.map((guess, i) => {
             return <ResultText key={i} guess={guess} politician={politician} />
+          })}
+          {!gameOver && [0,1,2,3,4,5].map(i => {
+            return guesses.length <= i ? <EmptyResults key={i} /> : null
           })}
         </div>
       </header>
