@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/politicle/static/css/main.93d2a57e.css",
+    "main.js": "/politicle/static/js/main.5db8118f.js",
+    "static/js/787.e1db93d4.chunk.js": "/politicle/static/js/787.e1db93d4.chunk.js",
+    "index.html": "/politicle/index.html",
+    "main.93d2a57e.css.map": "/politicle/static/css/main.93d2a57e.css.map",
+    "main.5db8118f.js.map": "/politicle/static/js/main.5db8118f.js.map",
+    "787.e1db93d4.chunk.js.map": "/politicle/static/js/787.e1db93d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93d2a57e.css",
+    "static/js/main.5db8118f.js"
+  ]
+}
