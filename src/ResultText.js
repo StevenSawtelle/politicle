@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import './styles/letters.scss';
 
 const getHitList = (guess, goal) => {
-
     //first init array of incorrect guesses
     let hitList = Array.apply(null, Array(guess.length)).map(() => 'incorrect' )
     let usedLetters = {};
@@ -48,23 +47,6 @@ const getHitList = (guess, goal) => {
     return hitList;
 }
 
-const getStatus = (guess, goal, index) => {
-
-    //first pass for correct letters
-
-
-
-
-    console.log(guess, goal, index) 
-    if(index >= goal.length){
-        return goal.split('').includes(guess[index]) ? 'misplaced' : 'incorrect';
-    }
-    if(guess[index] === goal[index]){
-        return 'correct';
-    }
-    return goal.split('').includes(guess[index]) ? 'misplaced' : 'incorrect';
-}
-
 const WordleLetter = ({ status, letter }) => {
     return <div className={'wordle-letter'}>
         <p className={`tile ${status}`}>
@@ -75,9 +57,9 @@ const WordleLetter = ({ status, letter }) => {
 
 export const EmptyResults = () => {
     return <div className='result-text'>
-        {[0,1,2,3].map((i) => {
+        {['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'].map((num, i) => {
             return <WordleLetter key={i}
-                status={'incorrect'}
+                status={`incorrect ${num}`}
             />
         })}
     </div>
