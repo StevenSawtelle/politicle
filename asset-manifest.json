@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/politicle.us/static/css/main.93d2a57e.css",
-    "main.js": "/politicle.us/static/js/main.bbb9509e.js",
-    "static/js/787.e1db93d4.chunk.js": "/politicle.us/static/js/787.e1db93d4.chunk.js",
-    "index.html": "/politicle.us/index.html",
-    "main.93d2a57e.css.map": "/politicle.us/static/css/main.93d2a57e.css.map",
-    "main.bbb9509e.js.map": "/politicle.us/static/js/main.bbb9509e.js.map",
-    "787.e1db93d4.chunk.js.map": "/politicle.us/static/js/787.e1db93d4.chunk.js.map"
+    "main.css": "/static/css/main.93d2a57e.css",
+    "main.js": "/static/js/main.a677033d.js",
+    "static/js/787.e1db93d4.chunk.js": "/static/js/787.e1db93d4.chunk.js",
+    "index.html": "/index.html",
+    "main.93d2a57e.css.map": "/static/css/main.93d2a57e.css.map",
+    "main.a677033d.js.map": "/static/js/main.a677033d.js.map",
+    "787.e1db93d4.chunk.js.map": "/static/js/787.e1db93d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93d2a57e.css",
-    "static/js/main.bbb9509e.js"
+    "static/js/main.a677033d.js"
   ]
 }
