@@ -38,6 +38,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <h1 className={'politicle'}>Politicle</h1>
+        <p className={'subtext'}>(Happy Valentine's Day Abigail!)</p>
         <ImageContainer politician={politician} />
         <p>
           {mainText}
