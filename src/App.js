@@ -38,7 +38,6 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <h1 className={'politicle'}>Politicle</h1>
-        <p className={'subtext'}>(Happy Valentine's Day Abigail!)</p>
         <ImageContainer politician={politician} />
         <p>
           {mainText}
@@ -56,6 +55,8 @@ const App = () => {
             return guesses.length <= i ? <EmptyResults key={i} /> : null
           })}
         </div>
+        <p className={'subtext'}>Happy Valentine's Day Abigail!</p>
+        <p className={'subtext'}>A website by <a href='https://www.stevensawtelle.com'>Steven Sawtelle</a></p>
       </header>
     </div>
   );
