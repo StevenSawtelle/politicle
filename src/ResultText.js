@@ -57,7 +57,7 @@ const WordleLetter = ({ status, letter }) => {
 
 export const EmptyResults = () => {
     return <div className='result-text'>
-        {['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'].map((num, i) => {
+        {['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen'].map((num, i) => {
             return <WordleLetter key={i}
                 status={`incorrect ${num}`}
             />
