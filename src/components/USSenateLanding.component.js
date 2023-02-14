@@ -10,7 +10,7 @@ const stateOptions = Object.entries(statesMapping).map(state => {
 
 const USSenateLanding = () => {
     return <div className={'us-senate'}>
-        <a className={'swap-games'} href={"/azSenate"}>Play the AZ Senate version</a>
+        <a className={'swap-games'} href={"/#/azSenate"}>Play the AZ Senate version</a>
         <MainGame choicesMap={stateOptions}
                   answerField={'location'}
                   answerGenerator={getRandomPolitician}

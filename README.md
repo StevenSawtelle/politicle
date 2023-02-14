@@ -20,6 +20,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm run deploy`
+
+This will commit to the gh-pages branch on https://github.com/StevenSawtelle/politicle/settings/pages. Then you change
+the `Custom domain` section back to `politicle.us`
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
