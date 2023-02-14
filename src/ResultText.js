@@ -65,9 +65,9 @@ export const EmptyResults = () => {
     </div>
 }
 
-export const ResultText = ({guess, politician }) => {
+export const ResultText = ({guess, answer, answerField }) => {
     const noSpaceGuess = guess.split(' ').join('');
-    const noSpacePolticianState = politician.state.toUpperCase().split(' ').join('');
+    const noSpacePolticianState = answer[answerField].toUpperCase().split(' ').join('');
     const hitList = getHitList(noSpaceGuess,noSpacePolticianState);//eg ['correct', 'incorrect', 'incorrect', 'misplaced']
     return <div className='result-text'>
         {noSpaceGuess.split('').map((letter, i) => {
