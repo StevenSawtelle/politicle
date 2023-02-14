@@ -7,7 +7,7 @@ const DropdownSelection = ({onGuess, choicesMap}) => {
     
     return <div style={{display: "inline-flex"}}>
         <Dropdown
-            placeholder='Select State'
+            placeholder='Select Option'
             fluid={false}
             search
             selection
@@ -18,7 +18,6 @@ const DropdownSelection = ({onGuess, choicesMap}) => {
             Guess
         </button>
     </div>
-
     };
 
 export default DropdownSelection;

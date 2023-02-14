@@ -3,9 +3,8 @@ import React from "react";
 import {statesMapping} from "../helpers/states";
 import {getRandomPolitician} from "../helpers/usSenateMapping";
 import MainGame from "./MainGame.component";
-import {politiciansInDistrictOrder} from "../helpers/azSenateHelpers";
 
-const stateOptions = Object.entries(politiciansInDistrictOrder).map(state => {
+const stateOptions = Object.entries(statesMapping).map(state => {
     return { value: state[0], text: state[1] }
 })
 
