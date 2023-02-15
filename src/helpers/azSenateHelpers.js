@@ -153,4 +153,11 @@ export const politiciansInDistrictOrder = [
     },
 ];
 
-export const getRandomAZSenatePolitician = () => politiciansInDistrictOrder[Math.floor(Math.random()*politiciansInDistrictOrder.length)];
+export const getRandomAZSenatePolitician = (usedAnswers) => {
+    if(usedAnswers.length === politiciansInDistrictOrder.length) return;
+    let tempAnswer = politiciansInDistrictOrder[Math.floor(Math.random()*politiciansInDistrictOrder.length)];
+    while(usedAnswers.find(answer => answer.name === tempAnswer.name)){
+        tempAnswer = politiciansInDistrictOrder[Math.floor(Math.random()*politiciansInDistrictOrder.length)];
+    }
+    return tempAnswer;
+}
