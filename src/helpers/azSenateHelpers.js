@@ -1,6 +1,6 @@
 
 
-export const politiciansInDistrictOrder = [
+export const azSenatePoliticiansInDistrictOrder = [
     {
         name: "Ken Bennett",
         url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ken_Bennett_by_Gage_Skidmore_4.jpg/440px-Ken_Bennett_by_Gage_Skidmore_4.jpg",
@@ -154,10 +154,10 @@ export const politiciansInDistrictOrder = [
 ];
 
 export const getRandomAZSenatePolitician = (usedAnswers) => {
-    if(usedAnswers.length === politiciansInDistrictOrder.length) return;
-    let tempAnswer = politiciansInDistrictOrder[Math.floor(Math.random()*politiciansInDistrictOrder.length)];
+    if(usedAnswers.length === azSenatePoliticiansInDistrictOrder.length) return;
+    let tempAnswer = azSenatePoliticiansInDistrictOrder[Math.floor(Math.random()*azSenatePoliticiansInDistrictOrder.length)];
     while(usedAnswers.find(answer => answer.name === tempAnswer.name)){
-        tempAnswer = politiciansInDistrictOrder[Math.floor(Math.random()*politiciansInDistrictOrder.length)];
+        tempAnswer = azSenatePoliticiansInDistrictOrder[Math.floor(Math.random()*azSenatePoliticiansInDistrictOrder.length)];
     }
     return tempAnswer;
 }

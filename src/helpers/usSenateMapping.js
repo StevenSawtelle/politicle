@@ -502,4 +502,11 @@ const politicians = [
     }
 ];
 
-export const getRandomPolitician = () => politicians[Math.floor(Math.random()*politicians.length)];
+export const getRandomPolitician = (usedAnswers) => {
+    if(usedAnswers.length === politicians.length) return;
+    let tempAnswer = politicians[Math.floor(Math.random()*politicians.length)];
+    while(usedAnswers.find(answer => answer.name === tempAnswer.name)){
+        tempAnswer = politicians[Math.floor(Math.random()*politicians.length)];
+    }
+    return tempAnswer;
+}

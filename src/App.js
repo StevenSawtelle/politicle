@@ -5,6 +5,7 @@ import AZSenateLanding from "./components/AZSenateLanding.component";
 import USSenateLanding from "./components/USSenateLanding.component";
 
 import './App.css';
+import AZHouseLanding from "./components/AZHouseLanding.component";
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<USSenateLanding/>} />
             <Route exact path="/azSenate" element={<AZSenateLanding/>} />
+              <Route exact path="/azHouse" element={<AZHouseLanding/>} />
           </Routes>
         </HashRouter>
       </div>
